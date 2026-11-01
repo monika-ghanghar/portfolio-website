@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BHIKHU GHANGHAR | AI UGC Creator</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#08070c;--card:#14121c;--ink:#f4f2fa;--mute:#9a96ad;--acc:#c6ff3d;--acc2:#8b5cf6;--line:#2a2638;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.55;overflow-x:hidden}
+h1,h2,h3,.big{font-family:Anton,Impact,sans-serif;text-transform:uppercase;font-weight:400;letter-spacing:.01em;line-height:1}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+section{padding:80px 0}
+nav{position:sticky;top:0;z-index:10;background:rgba(8,7,12,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-family:Anton,Impact,sans-serif;font-size:22px}.logo i{color:var(--acc);font-style:normal}
+nav ul{display:flex;gap:22px;list-style:none;padding:0;font-size:14px;color:var(--mute)}
+nav ul a:hover{color:var(--acc)}
+.btn{display:inline-block;background:var(--acc);color:#0b0b0b;font-weight:800;padding:13px 24px;border-radius:99px;font-size:14px;border:0;cursor:pointer}
+.btn.ghost{background:none;color:var(--ink);border:1px solid var(--line)}
+.tag{display:inline-flex;gap:8px;align-items:center;font-size:12px;letter-spacing:.14em;color:var(--mute);text-transform:uppercase}
+.dot{width:9px;height:9px;border-radius:50%;background:#ff3b3b;animation:b 1.2s infinite}
+@keyframes b{50%{opacity:.2}}
+.hero{padding:90px 0 60px;background:radial-gradient(600px 300px at 80% 0,rgba(139,92,246,.3),transparent)}
+.hero h1{font-size:clamp(52px,11vw,130px);margin:18px 0}
+.hero h1 em{font-style:normal;color:var(--acc)}
+.hero p{max-width:540px;color:var(--mute);font-size:18px;margin-bottom:28px}
+.hero .btn+.btn{margin-left:10px}
+.marq{border-block:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:14px 0;background:var(--card)}
+.marq div{display:inline-block;animation:m 25s linear infinite;font-family:Anton,Impact,sans-serif;font-size:22px;color:var(--mute);text-transform:uppercase}
+.marq b{color:var(--acc);font-weight:400;margin:0 18px}
+@keyframes m{to{transform:translateX(-50%)}}
+.num{color:var(--acc);font-size:13px;letter-spacing:.2em;font-weight:800}
+h2{font-size:clamp(36px,7vw,68px);margin:10px 0 28px}
+h2 em{font-style:normal;color:var(--acc2)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.tabs button{background:none;color:var(--mute);border:1px solid var(--line);border-radius:99px;padding:8px 16px;font:600 13px Inter,sans-serif;cursor:pointer}
+.tabs button.on{background:var(--acc);color:#0b0b0b;border-color:var(--acc)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.ad{background:linear-gradient(160deg,#241d3a,var(--card));border:1px solid var(--line);border-radius:18px;aspect-ratio:9/16;padding:16px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.ad:hover{border-color:var(--acc)}
+.ad .play{width:54px;height:54px;border-radius:50%;background:var(--acc);color:#000;display:grid;place-items:center;margin:auto;font-size:20px}
+.ad small{color:var(--mute);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.ad h3{font-size:24px;margin-top:4px}
+.hide{display:none}
+.ad video,.ad iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
+.ad small{position:relative;z-index:1}
+.note{color:var(--mute);font-size:13px;margin-top:18px}
+.three{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}
+.box .big{font-size:54px;color:var(--acc2)}
+.box h3{font-size:28px;margin:10px 0 8px}
+.box p{color:var(--mute);font-size:15px}
+.why li{list-style:none;display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.why{padding:0}.why b{color:var(--acc);font-family:Anton,Impact,sans-serif;font-weight:400;font-size:20px}
+.why span{color:var(--mute)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{border:1px solid var(--line);background:var(--card);padding:10px 18px;border-radius:99px;font-weight:600;font-size:14px}
+.price .box.hot{border-color:var(--acc)}
+.price .big{color:var(--acc);font-size:48px}
+.price ul{padding-left:18px;color:var(--mute);font-size:14px;margin-top:12px}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{cursor:pointer;font-weight:800}
+details p{color:var(--mute);margin-top:8px}
+.about{display:grid;grid-template-columns:1fr 1.4fr;gap:34px;align-items:center}
+.photo{aspect-ratio:4/5;border-radius:22px;border:1px dashed var(--acc2);display:grid;place-items:center;color:var(--mute);text-align:center;background:var(--card);font-size:14px;padding:20px}
+.cta{text-align:center;background:radial-gradient(500px 250px at 50% 100%,rgba(198,255,61,.18),transparent)}
+.cta h2{font-size:clamp(40px,9vw,100px)}
+.links{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-top:26px;color:var(--mute)}
+.links a:hover{color:var(--acc)}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--mute);font-size:13px;text-align:center}
+@media(max-width:720px){nav ul{display:none}.about{grid-template-columns:1fr}section{padding:56px 0}}
+</style>
+</head>
+<body id="top">
+<nav><div class="wrap"><a class="logo" href="#top">BHI<i>KHU</i>.AI</a>
+<ul><li><a href="#work">Work</a></li><li><a href="#method">Method</a></li><li><a href="#why">Why me</a></li><li><a href="#about">About</a></li><li></li></ul>
+<a class="btn" href="#contact">Contact Me</a></div></nav>
+
+<header class="hero"><div class="wrap">
+<span class="tag"><span class="dot"></span> AI UGC Creator · Open for first collabs</span>
+<h1>AI ads that<br>feel <em>human</em><br>and sell.</h1>
+<p>I make scroll-stopping UGC-style video ads with AI avatars, voiceovers and smart editing. Fast, affordable and built around a strong hook.</p>
+<a class="btn" href="#work">See my sample ads ↓</a><a class="btn ghost" href="#contact">Get a free test ad</a>
+</div></header>
+
+<div class="marq"><div>AI Avatars <b>✦</b> Hooks <b>✦</b> Product Demos <b>✦</b> Voiceovers <b>✦</b> Reels &amp; TikTok <b>✦</b> Fast Turnaround <b>✦</b> AI Avatars <b>✦</b> Hooks <b>✦</b> Product Demos <b>✦</b> Voiceovers <b>✦</b> Reels &amp; TikTok <b>✦</b> Fast Turnaround <b>✦</b></div></div>
+
+<section id="work"><div class="wrap">
+<span class="num">01 / THE WORK</span>
+<h2>Sample <em>ad</em> library</h2>
+<!-- <div class="tabs" id="tabs"><button class="on" data-f="all">All</button><button data-f="demo">Skincare</button><button data-f="ugc">Haircare</button><button data-f="vo">jewellery</button></div> -->
+<div class="tabs" id="tabs"><button class="on" data-f="all">All</button></div>
+<div class="grid" id="grid">
+<div class="ad" data-c="demo"><small>Skincare Demo</small><video src="video/erasio_moisturizer.mp4" controls playsinline preload="metadata"></video></div>
+<!-- <div class="ad" data-c="demo"><small>Haircare Demo</small><video src="videos/serum.mp4" controls playsinline preload="metadata"></video></div> -->
+<!-- <div class="ad" data-c="demo"><small>Jewellery Demo</small><video src="videos/serum.mp4" controls playsinline preload="metadata"></video></div> -->
+<div class="ad" data-c="demo"><small>Skincare Demo</small><video src="video/erasio_face serum.mp4" controls playsinline preload="metadata"></video></div>
+<!-- <div class="ad" data-c="demo"><small>Haircare Demo</small><video src="videos/serum.mp4" controls playsinline preload="metadata"></video></div> -->
+<div class="ad" data-c="demo"><small>Skincare Demo</small><video src="video/VN20260707_205233.mp4" controls playsinline preload="metadata"></video></div>
+<!-- <div class="ad" data-c="demo"><small>Jewellery Demo</small><video src="videos/serum.mp4" controls playsinline preload="metadata"></video></div> -->
+<div class="ad" data-c="demo"><small>Skincare Demo</small><video src="video/VN20260708_093802.mp4" controls playsinline preload="metadata"></video></div>
+
+<!-- <div class="ad" data-c="demo"><small>Skincare Demo</small><div class="play">▶</div><div><h3>Skincare Serum</h3><small>Sample · 0:20</small></div></div> -->
+<!-- <div class="ad" data-c="ugc"><small>Haircare Demo</small><div class="play">▶</div><div><h3>App Promo</h3><small>Sample · 0:25</small></div></div> -->
+<!-- <div class="ad" data-c="vo"><small>Jewellery Demo</small><div class="play">▶</div><div><h3>Fitness Gadget</h3><small>Sample · 0:18</small></div></div> -->
+<!-- <div class="ad" data-c="demo"><small>Skincare Demo</small><div class="play">▶</div><div><h3>Coffee Brand</h3><small>Sample · 0:15</small></div></div> -->
+<!-- <div class="ad" data-c="ugc"><small>Haircare Demo</small><div class="play">▶</div><div><h3>SaaS Tool</h3><small>Sample · 0:30</small></div></div> -->
+<!-- <div class="ad" data-c="vo"><small>jewellery Demo</small><div class="play">▶</div><div><h3>Fashion Drop</h3><small>Sample · 0:20</small></div></div> -->
+</div>
+<!-- <p class="note">Sample concepts made for practice, not paid client work. Replace these cards with your own video links or embeds.</p> -->
+</div></section>
+
+<section id="method" style="background:var(--card)"><div class="wrap">
+<span class="num">02 / THE METHOD</span>
+<h2>How I build <em>an ad</em></h2>
+<div class="three">
+<div class="box"><div class="big">01</div><h3>The Hook</h3><p>The first 2 seconds decide everything. I write several hook options and pick the one that stops the scroll.</p></div>
+<div class="box"><div class="big">02</div><h3>The Story</h3><p>A short, native script that handles the viewer’s doubt before they even think it. Then AI visuals, voice and captions bring it to life.</p></div>
+<div class="box"><div class="big">03</div><h3>The Close</h3><p>A clear call to action, sized for TikTok, Reels and Shorts, delivered with free revisions.</p></div>
+</div></div></section>
+
+<section id="why"><div class="wrap">
+<span class="num">03 / WHY ME</span>
+<h2>Why <em>brands</em> can trust me</h2>
+<ul class="why">
+<li><b>01</b><div>Hook-first thinking<br><span>Every script starts with the scroll-stop, not the product.</span></div></li>
+<li><b>02</b><div>Fast turnaround<br><span>AI workflow means drafts in 24–48 hours.</span></div></li>
+<li><b>03</b><div>More variations for less<br><span>Test several hooks and avatars without the cost of a full shoot.</span></div></li>
+<li><b>04</b><div>No camera shyness needed<br><span>Perfect for brands who want UGC without sending products or hiring talent.</span></div></li>
+<li><b>05</b><div>Easy to work with<br><span>Clear updates, polite on feedback, quick on revisions.</span></div></li>
+<li><b>06</b><div>Hungry to prove myself<br><span>New creator, so I put extra care into my first collabs.</span></div></li>
+</ul>
+<!-- <h3 style="margin:40px 0 14px;font-size:30px">Tools I use</h3>
+<div class="chips"><span>ChatGPT / Claude</span><span>ElevenLabs</span><span>HeyGen</span><span>Runway / Kling</span><span>CapCut</span><span>Canva</span></div>
+<p class="note">Edit this list to the tools you actually use.</p> -->
+</div></section>
+
+<section id="about" style="background:var(--card)"><div class="wrap about">
+<!-- <img class="photo" src="video/Neon Creator’s Editing Desk.png" alt="" style=""> -->
+<div><span class="num">04 / ABOUT</span>
+<h2>Hi, I’m <em>BHIKHU GHANGHAR</em></h2>
+<p style="color:var(--mute);margin-bottom:14px">I’m a AI UGC creator. I’m learning fast, practising daily and building ads that are short, clear and made to convert.</p>
+<p style="color:var(--mute);margin-bottom:22px">Languages: English, Hindi. I love beauty, skincare, fitness, fashion.</p>
+<a class="btn" href="#contact">Work with me</a></div>
+</div></section>
+
+<!-- <section id="price" class="price"><div class="wrap">
+<span class="num">05 / RATES</span>
+<h2>Starter <em>packages</em></h2>
+<div class="three">
+<div class="box"><h3>Single Ad</h3><div class="big">₹ —</div><ul><li>1 AI UGC video (15–30s)</li><li>Hook + script</li><li>1 revision</li></ul></div>
+<div class="box hot"><h3>Test Pack</h3><div class="big">₹ —</div><ul><li>3 ads, different hooks</li><li>Captions + voiceover</li><li>2 revisions</li></ul></div>
+<div class="box"><h3>Monthly</h3><div class="big">₹ —</div><ul><li>8 ads per month</li><li>Priority delivery</li><li>Monthly report</li></ul></div>
+</div>
+<p class="note">Add your own prices. First collab offer: one free or discounted test ad.</p>
+</div></section> -->
+
+<section style="background:var(--card)"><div class="wrap">
+<span class="num">05 / FAQ</span>
+<h2>Quick <em>answers</em></h2>
+<details><summary>Do the ads look obviously AI?</summary><p>I focus on natural voices, real-feeling pacing and clean edits, so the ad feels like a creator, not a robot.</p></details>
+<details><summary>What do you need from me?</summary><p>Product name, a short brief, your target audience and any product images or clips.</p></details>
+<details><summary>How fast will I get my ad?</summary><p>First draft in 24–48 hours for most single ads.</p></details>
+<details><summary>Can you disclose that it’s AI?</summary><p>Yes. I follow each platform’s AI-content rules and can add a label if needed.</p></details>
+</div></section>
+
+<section id="contact" class="cta"><div class="wrap">
+<span class="num">06 / LET’S WORK</span>
+<h2>Let’s make your<br>next <em style="color:var(--acc)">winning ad</em></h2>
+<a class="btn" href="mailto:youremail@gmail.com">tanyaindurat158@gmail.com</a>
+<!-- <div class="links"><a href="https://www.instagram.com/silent_diary158/">Instagram</a></div> -->
+</div></section>
+
+<footer>© 2026 BHIKHU.AI · AI-made ads, built to sell · <a href="#top">Back to top ↑</a></footer>
+
+<script>
+document.getElementById('tabs').addEventListener('click',function(e){
+var b=e.target.closest('button');if(!b)return;
+this.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');
+document.querySelectorAll('#grid .ad').forEach(function(a){a.classList.toggle('hide',b.dataset.f!=='all'&&a.dataset.c!==b.dataset.f)});
+});
+</script>
+</body>
+</html>
